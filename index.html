@@ -11,6 +11,8 @@
     <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/lrtk.css" media="all" />
+    <link rel="stylesheet" href="css/meanmenu.min.css" media="all" />
     <link href="css/flexslider.css" rel="stylesheet" >
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/queries.css" rel="stylesheet">
@@ -24,26 +26,20 @@
         <header id="home">
 
           <section class="hero" id="hero">
-            <nav class="nav right">
-              <ul>
-                <li class="current"><a id="must" href="#">首页</a></li>
-                <li><a href="#">客户服务</a></li>
-                <li><a href="#">产品展示</a></li>
-                <li><a href="#">经典案例</a></li>
-                <li><a href="#">联系我们</a></li>
-              </ul>
-              <script type="text/javascript">
-                  $('#must').mouseover(function(){
-                    $('#must').css("background","rgba(0, 0, 0, 0.3)")
-                  }).mouseout(function(){
-                    $('#must').css("background","black")
-                  })
-              </script>
-            </nav>
             <div class="container less">
                   <a id="nav-toggle" class="nav_slide_button" href="#"></a>
-
+              <header>
+                <nav>
+                  <ul>
+                    <li><a href="#">Top Level Link1</a></li>
+                    <li><a href="#">Top Level Link2</a></li>
+                    <li><a href="#">Top Level Link3</a></li>
+                    <li><a href="#">Top Level Link4</a></li>
+                  </ul>
+                </nav>
+              </header>
               <div class="row lion">
+
                 <div class="col-md-8 col-md-offset-2 text-center inner">
                   <h1 class="animated fadeInDown"><span style="color:black;">We do translate</span></h1>
                   <p class="animated fadeInUp delay-05s" style="color:black;font-family:Chalkduster"><em>You enjoy the life</em></p>
@@ -403,12 +399,11 @@
         <script src="js/scripts.js"></script>
         <script src="js/jquery.flexslider.js"></script>
         <script src="js/modernizr.js"></script>
-        <script type="text/javascript">
-          (function(){
-            var a = 5;
-          })();
-          console.log(a)
-
+        <script src="js/jquery.meanmenu.min.js"></script>
+        <script>
+          jQuery(document).ready(function () {
+            jQuery('header nav').meanmenu();
+          });
         </script>
       </body>
     </html>

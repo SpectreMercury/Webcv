@@ -1,0 +1,27 @@
+/* ����ͼ�� �Ѽ����� www.lanrentuku.com */
+
+/* Basic CSS */
+
+header nav {
+float:right;
+}
+header nav ul {
+margin: 0;
+padding: 1em;
+list-style-type: none;
+}
+header nav ul li {
+display: inline;
+margin-left: 1em;
+}
+header nav ul li:first-child {
+margin-left: 0;
+}
+header nav ul li ul {
+display: none;
+}
+header {
+display: block;
+float: left;
+width: 100%;
+}
